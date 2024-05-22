@@ -1,0 +1,72 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#display{
+    background-color: aqua;
+    border: 2px solid rgb(83, 83, 83);
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+}
+#bird
+{
+    
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    bottom: 330px;
+    left: 80px;
+    transition: bottom 80ms , left 40ms;
+    -webkit-transition: bottom 80ms,  left 40ms;
+    border-radius: 20px;
+    background: url("./Assets/bird.png") ;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#pipe
+{
+    position: absolute;
+    height: 700px;
+    width: 72px;    
+    left: 0;
+    transition: left 80ms;
+    -webkit-transition: left 80ms;
+    background: url("./Assets/pipe.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    z-index: 0;
+}
+.upperPipe 
+{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+.lowerPipe
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+}
+.score h3
+{
+    
+}
+.score{
+    position: absolute;
+    left: 83%;
+    margin-right: 20px;
+}
