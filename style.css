@@ -40,8 +40,8 @@ body
     height: 700px;
     width: 72px;    
     left: 0;
-    transition: left 80ms;
-    -webkit-transition: left 80ms;
+    transition: left 60ms;
+    -webkit-transition: left 60ms;
     background: url("./Assets/pipe.png") ;
     background-repeat: no-repeat;
     background-attachment: fixed; 
